@@ -1,2 +1,49 @@
 # javascript-test-0001-final-20326-pratiksha
 Final Project Assignment - This repository contains the complete final project code and documentation.
+let n = 5;
+
+// Upper part including middle line
+for (let i = 1; i <= n; i++) {
+    let row = "";
+
+    // spaces before first star
+    for (let j = 1; j <= n - i; j++) {
+        row += " ";
+    }
+
+    // first star
+    row += "*";
+
+    // spaces between stars
+    if (i > 1) {
+        for (let j = 1; j <= 2 * i - 3; j++) {
+            row += " ";
+        }
+        row += "*";
+    }
+
+    console.log(row);
+}
+
+// Lower part
+for (let i = n - 1; i >= 1; i--) {
+    let row = "";
+
+    // spaces before first star
+    for (let j = 1; j <= n - i; j++) {
+        row += " ";
+    }
+
+    // first star
+    row += "*";
+
+    // spaces between stars
+    if (i > 1) {
+        for (let j = 1; j <= 2 * i - 3; j++) {
+            row += " ";
+        }
+        row += "*";
+    }
+
+    console.log(row);
+}
